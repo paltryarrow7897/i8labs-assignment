@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>Connect to MetaMask <span><button id="connect">Connect</button></span></p>
+        <div id="currentAccount"></div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div>
+        <p>Add new user data</p>
+        <form>
+            <label for="addName"> Name: </label><input type="text" name="addName" id="addName">
+            <label for="addAddress"> Address: </label><input type="text" name="addAddress" id="addAddress">
+            <label for="addDob"> DOB: </label><input type="date" name="addDob" id="addDob">
+            <button type="button" id="submitAdd"> Submit </button>
+        </form>
+        <div id="addStatus"></div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div>
+        <p>Edit user data</p>
+        <form>
+            <label for="editName"> Name: </label><input type="text" name="editName" id="editName">
+            <label for="editAddress"> Address: </label><input type="text" name="editAddress" id="editAddress">
+            <label for="editDob"> DOB: </label><input type="date" name="editDob" id="editDob">
+            <button type="button" id="submitEdit"> Submit </button>
+        </form>
+        <div id="editStatus"></div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div id="view">
+        <p>View user data</p>
+        <button type="button" id="submitView"> Submit </button>
+        <div id="viewUser">
+            <div id="current"></div>
+            <div id="previous"></div>
+        </div>
+    </div>
+    <script src = 'App.js'></script>
+</body>
+</html>
